@@ -13,3 +13,11 @@ This branch has the same starting point as [this article](https://prisma.io/blog
 - create prisma schema
 - setting up a PostgreSQL database
 - npx prisma db push (set the databse sychronously without need to generate migration history)
+
+- setting up prisma in our project
+
+- seeding the database using Prisma
+
+- npm i ts-node -D
+- npx prisma db seed --preview-feature
+- npx prisma studio
