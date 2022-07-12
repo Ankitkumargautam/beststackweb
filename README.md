@@ -72,3 +72,9 @@ Nexus is a GraphQL schema construction library where you define your GraphQL sch
 - use them in /graphql/schema.ts
 
 7. Defining graphql queries using Nexus
+
+8. Client-side GraphQL queries and rendering data comming from backend
+
+- Setting up Apollo Client in Next.js
+
+- npm install @apollo/client
