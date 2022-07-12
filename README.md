@@ -64,3 +64,9 @@ Nexus is a GraphQL schema construction library where you define your GraphQL sch
 - update the import in the /pages/api/graphql.ts file
 
 - in the browser graphQL playground we get ok: true
+
+6. Defining the schema using Nexus
+
+- define the types by creating /graphql/types and create Link.ts, User.ts
+
+- use them in /graphql/schema.ts
