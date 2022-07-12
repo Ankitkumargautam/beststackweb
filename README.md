@@ -40,3 +40,27 @@ This branch has the same starting point as [this article](https://prisma.io/blog
 
 - Inside the /graphql/resolvers.ts file, update the `links function to the following code
   Before it was containing a json object and now it is fetching data from prisma database
+
+- The flaws with our current GraphQL setup
+
+- Resolvers must match the same structure as the schema and vice-versa. Otherwise, you can end up with buggy and unpredictable behavior. These two components can accidentally go out of sync when the schema evolves or the resolver implementation changes.
+
+- The GraphQL schema is defined as strings, so no auto-completion and build-time error checks for the SDL code.
+
+---
+
+Nexus is a GraphQL schema construction library where you define your GraphQL schema using code. The value proposition of this approach is you are using a programming language to build your API, which has multiple benefits:
+
+- No need to context-switch between SDL and the programming language you are using to build your business logic.
+- Auto-completion from the text-editor
+- Type-safety (if you are using TypeScript)
+
+5. Building a GraphQL schema using Nexus, Prisma and Nextjs
+
+- install nexus ~ npm install nexus
+
+- in the /graphql/schema.ts file replace the typeDefs
+
+- update the import in the /pages/api/graphql.ts file
+
+- in the browser graphQL playground we get ok: true
