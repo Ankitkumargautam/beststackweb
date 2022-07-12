@@ -29,3 +29,14 @@ This branch has the same starting point as [this article](https://prisma.io/blog
 - graphql/schema.ts ~ define schema of the app
 
 - /pages/api/graphql.ts ~ Creating the GraphQL endpoint
+
+4. connecting graphQL api with prisma database
+
+- /lib/prisma.ts ~ initialize prisma client
+
+- /graphql/context.ts ~ Creating a GraphQL context
+
+- update the /pages/api/graphql.ts file to include the context
+
+- Inside the /graphql/resolvers.ts file, update the `links function to the following code
+  Before it was containing a json object and now it is fetching data from prisma database
