@@ -21,3 +21,11 @@ This branch has the same starting point as [this article](https://prisma.io/blog
 - npm i ts-node -D
 - npx prisma db seed --preview-feature
 - npx prisma studio
+
+3. making GraphQL API using Apollo Server 3 and Prisma
+
+- npm i apollo-server-micro graphql micro-cors
+
+- graphql/schema.ts ~ define schema of the app
+
+- /pages/api/graphql.ts ~ Creating the GraphQL endpoint
